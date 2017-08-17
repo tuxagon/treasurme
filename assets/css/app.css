@@ -1,1 +1,9 @@
 /* This file is for your main application css. */
+
+.media {
+  border: 1px solid gray;
+}
+
+.media-left li {
+  list-style-type: none;
+}
