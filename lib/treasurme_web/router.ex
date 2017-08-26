@@ -23,6 +23,12 @@ defmodule TreasurmeWeb.Router do
     end
   end
 
+  scope "/api", TreasurmeWeb do
+    pipe_through :api
+
+    #resources "/posts", PostController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", TreasurmeWeb do
   #   pipe_through :api

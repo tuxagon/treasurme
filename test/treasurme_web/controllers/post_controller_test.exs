@@ -17,6 +17,11 @@ defmodule TreasurmeWeb.PostControllerTest do
       conn = get conn, post_path(conn, :index)
       assert html_response(conn, 200) =~ "Listing Posts"
     end
+
+    test "has elm-main wrapper" do
+      conn = get conn, post_path(conn, :index)
+      assert html_response(conn, 200) =~ "id=\"elm-main\""
+    end
   end
 
   describe "new post" do
